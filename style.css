@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, #89d3c8, #7fcbc6, #75c4c3, #6dbcc1, #65b4be, #5dadbc, #56a6ba,
+    #509fb7, #4897b4, #4190b1, #3c88ae, #3880aa) top no-repeat, url("img/ground.png") bottom repeat;
+    background-size: 100% 74%, 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+#mario {
+    position: absolute;
+    max-width: 100%;
+    height: 95px;
+    left: 2%;
+    bottom: 26%;
+    animation: mario 3s ease-in forwards;
+}
+
+#castle {
+    position: absolute;
+    max-width: 100%;
+    height: 300px;
+    right: 5%;
+    bottom: 26%;
+}
+
+@keyframes mario {
+    100% {
+        transform: translate(800px);
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-size: 100% 80%, 27px;
+    }
+
+    #mario {
+        height: 42px;
+        bottom: 20%;
+        animation: mario 2s ease-in forwards;
+    }
+
+    #castle {
+        height: 130px;
+        bottom: 20%;
+    }
+
+    @keyframes mario {
+        100% {
+            transform: translate(130px);
+        }
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    body {
+        background-size: 100% 80%, 32px;
+    }
+
+    #mario {
+        height: 42px;
+        bottom: 20%;
+        animation: mario 2s ease-in forwards;
+    }
+
+    #castle {
+        height: 130px;
+        bottom: 20%;
+    }
+
+    @keyframes mario {
+        100% {
+            transform: translate(200px);
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        background-size: 100% 78%, 35px;
+    }
+
+    #mario {
+        height: 70px;
+        bottom: 22%;
+        animation: mario 2s ease-in forwards;
+    }
+
+    #castle {
+        height: 220px;
+        bottom: 22%;
+    }
+
+    @keyframes mario {
+        100% {
+            transform: translate(410px);
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #mario {
+        animation: mario 2s ease-in forwards;
+    }
+
+    @keyframes mario {
+        100% {
+            transform: translate(500px);
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    #mario {
+        height: 127px;
+        animation: mario 4s ease-in forwards;
+    }
+
+    #castle {
+        height: 400px;
+    }
+
+    @keyframes mario {
+        100% {
+            transform: translate(1700px);
+        }
+    }
+}
