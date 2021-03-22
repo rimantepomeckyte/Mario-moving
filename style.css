@@ -38,7 +38,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     body {
         background-size: 100% 80%, 27px;
     }
@@ -61,7 +61,7 @@ body {
     }
 }
 
-@media (min-width: 376px) and (max-width: 425px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
     body {
         background-size: 100% 80%, 32px;
     }
@@ -84,7 +84,7 @@ body {
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
     body {
         background-size: 100% 78%, 35px;
     }
@@ -107,7 +107,7 @@ body {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     #mario {
         animation: mario 2s ease-in forwards;
     }
@@ -119,7 +119,7 @@ body {
     }
 }
 
-@media (min-width: 1441px) {
+@media screen and (min-width: 1441px) {
     #mario {
         height: 127px;
         animation: mario 4s ease-in forwards;
